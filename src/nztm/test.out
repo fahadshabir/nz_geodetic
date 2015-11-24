@@ -1,0 +1,19 @@
+Enter NZTM easting, northing: 
+Input NZTM e,n:   1576041.150  6188574.240
+Output Lat/Long:   -34.444066   172.739194
+Output NZTM e,n:  1576041.150  6188574.240
+Difference:             0.000       -0.000
+
+Enter NZTM easting, northing: 
+Input NZTM e,n:   1576542.010  5515331.050
+Output Lat/Long:   -40.512409   172.723106
+Output NZTM e,n:  1576542.010  5515331.050
+Difference:            -0.000       -0.000
+
+Enter NZTM easting, northing: 
+Input NZTM e,n:   1307103.220  4826464.860
+Output Lat/Long:   -46.651295   169.172062
+Output NZTM e,n:  1307103.220  4826464.860
+Difference:             0.000       -0.000
+
+Enter NZTM easting, northing: 

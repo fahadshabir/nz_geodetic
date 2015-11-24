@@ -1,0 +1,19 @@
+Enter NZMG easting, northing: 
+Input NZMG e,n:   2487100.638  6751049.719
+Output Lat/Long:   -34.444066   172.739194
+Output NZMG e,n:  2487100.638  6751049.719
+Difference:             0.000        0.000
+
+Enter NZMG easting, northing: 
+Input NZMG e,n:   2486533.395  6077263.661
+Output Lat/Long:   -40.512409   172.723106
+Output NZMG e,n:  2486533.395  6077263.661
+Difference:            -0.000        0.000
+
+Enter NZMG easting, northing: 
+Input NZMG e,n:   2216746.425  5388508.765
+Output Lat/Long:   -46.651295   169.172062
+Output NZMG e,n:  2216746.425  5388508.765
+Difference:             0.000       -0.000
+
+Enter NZMG easting, northing: 

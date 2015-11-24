@@ -1,0 +1,53 @@
+This file contains code to implement grid based transformation of 
+latitude/longitude coordinates using an NTv2 ascii formatted file.
+It is intended for the conversion of latitudes and longitudes between
+the New Zealand geodetic datums NZGD1949 and NZGD2000.  
+
+This is a minimal implementation of a grid transformation with some
+significant limitations including:
+  1) It cannot work with the binary NTv2 format 
+  2) It does not support subgrids - it only works with a single grid
+  3) It always loads the entire grid into memory - there is no
+     load on demand or caching
+  4) It only calculates the adjustment to coordinates, not the
+     error of the adjustment.
+
+This software may be freely used and modified.  It is provided as is, 
+where is, with no guarantees as to its correct functioning.  Land
+Information New Zealand accepts no liability for any consequences 
+of the use of this software.
+
+The makefile provided can be used to compile the program testlinzgrid which 
+implements the linzgrid functions.
+
+The NTv2 file used for the NZGD1949 to NZGD2000 transformation is
+nzgd2kgrid9911.asc, which may be downloaded from the LINZ website.
+
+This module can also compile the NTv2 grid into a source code file
+linzgridnzgd2k.c.
+
+The makefile can also generate test output files (make test) which can
+be compared with check.out, which has the correct values.  Expect rounding 
+errors in the last significant digit.
+
+The makefile is designed for use in a linux system.  It is very simply structured
+and may be readily ported to other systems.
+
+This is version 1.3 of the linzgrid code.  It differs from the previous version in
+that the grid loading function is in a separate module.  See comments in linzgrid.c
+for a description of the linzgrid API. 
+
+Contents of this zip file should be
+
+linzgrid.c         Main grid functions, calculations and destructor
+linzgrid.h
+linzgridload.c     Function for loading an ASCII NTv2 file
+linzgridload.h
+testlinzgrid.c     Main program for testing the NTv2 loader
+writegridsource.c  Main program to create a source file from the NTv2 grid
+makefile           Make file to build all components
+test.in            Test input file
+check.out          Check output file
+README             This file
+
+

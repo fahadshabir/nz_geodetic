@@ -1,0 +1,26 @@
+New Zealand Transverse Mercator (NZTM) projection routines
+==========================================================
+
+The files nztm.c and nztm.h contain ANSI C code for converting coordinates 
+between the New Zealand Transverse Merctator and latitude and longitude on the
+New Zealand Geodetic Datum 2000.  
+
+
+The code uses one precompiler macro.
+
+TEST_NZTM:  if defined causes nztm.c to compile into a test program
+            which converts NZTM coordinates to NZGD2000 and back
+            again.  The file test.dat contains sample data which
+            can be entered into the test program - the output should
+            match the file test.out.
+                  
+The NZTM module provides two functions 
+
+void nztm_geod( double n, double e, double *lt, double *ln );
+void geod_nztm( double lt, double ln, double *n, double *e );
+
+The first converts a northing n and easting e to a latitude lt and 
+longitude ln, and the second performs the inverse function.
+
+Northings and eastings are in metres. Latitudes and longitudes are in
+radians.
