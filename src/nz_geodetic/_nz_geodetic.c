@@ -14,13 +14,13 @@ static PyObject *linz_nzmg_to_nztm(PyObject *self, PyObject *args);
 static char linz_nzmg_to_nztm_docstring[] =
   "Convert a point from New Zealand Map Grid to NZTM2000.\
   \n\n\
-  nzmg_to_nztm2000(easting: float, easting: float) -> Tuple[float, float]";
+  nzmg_to_nztm2000(easting: float, northing: float) -> Tuple[float, float]";
 
 static PyObject *linz_nztm_to_nzmg(PyObject *self, PyObject *args);
 static char linz_nztm_to_nzmg_docstring[] =
     "Convert a point from NZTM2000 to New Zealand Map Grid.\
     \n\n\
-    nztm2000_to_nzmg(easting: float, easting: float) -> Tuple[float, float]";
+    nztm2000_to_nzmg(easting: float, northing: float) -> Tuple[float, float]";
 
 static PyMethodDef module_methods[] = {
     {"nzmg_to_nztm2000", linz_nzmg_to_nztm, METH_VARARGS, linz_nzmg_to_nztm_docstring},
